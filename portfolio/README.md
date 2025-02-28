@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Webbsida
 
-## Getting Started
+En modern portfolio-webbsida byggd med Next.js och Tailwind CSS.
 
-First, run the development server:
+## Funktioner
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Responsiv design för alla skärmstorlekar
+- Mörkt och ljust tema
+- Sektioner för:
+  - Om mig
+  - Kompetenser
+  - Projekt
+  - Kontakt
+- Kontaktformulär (kräver konfiguration för att skicka mail)
+- Modern, minimalistisk design
+- Väl strukturerad kodorganisation
+
+## Teknologier
+
+- Next.js 15
+- React 19
+- Tailwind CSS
+- TypeScript
+- EmailJS (för kontaktformulär)
+
+## Installation
+
+1. Klona repot
+2. Installera beroenden:
+   ```bash
+   npm install
+   ```
+3. Starta utvecklingsservern:
+   ```bash
+   npm run dev
+   ```
+
+## Struktur
+
+Projektet är organiserat enligt följande struktur:
+
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── forms/
+│   │   └── ContactForm.tsx
+│   ├── icons/
+│   │   └── SocialIcons.tsx
+│   ├── layout/
+│   │   ├── Footer.tsx
+│   │   └── Header.tsx
+│   ├── sections/
+│   │   ├── AboutSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   └── SkillsSection.tsx
+│   └── ui/
+│       ├── ProjectCard.tsx
+│       └── SkillCard.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Konfigurering av kontaktformulär
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+För att aktivera kontaktformuläret behöver du:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Skapa ett konto på [EmailJS](https://www.emailjs.com/)
+2. Skapa en Email Service och en Email Template
+3. Uppdatera följande konstanter i `src/components/forms/ContactForm.tsx`:
+   ```typescript
+   const SERVICE_ID = 'YOUR_SERVICE_ID'; // Din EmailJS service ID
+   const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // Din EmailJS template ID
+   const USER_ID = 'YOUR_USER_ID'; // Din EmailJS user ID
+   ```
 
-## Learn More
+## Anpassning
 
-To learn more about Next.js, take a look at the following resources:
+- Uppdatera innehållet i respektive sektionskomponent för att personligt anpassa din portfolio
+- Lägg till dina egna projekt i `ProjectsSection.tsx`
+- Lägg till dina kompetenser i `SkillsSection.tsx`
+- Uppdatera din kontaktinformation i `ContactSection.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

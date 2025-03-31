@@ -23,8 +23,8 @@ export default function ProjectsSection() {
           <div className="transform transition-all duration-500 hover:scale-105 h-full">
             <ProjectCard 
               title="Tetris Clone"
-              description="En modern implementation av det klassiska Tetris-spelet, byggd med vanilla JavaScript, HTML5 Canvas och CSS."
-              tags={["JavaScript", "Canvas", "CSS"]}
+              description="En modern implementation av det klassiska Tetris-spelet, byggd med Next.js, TypeScript, Tailwind CSS och Supabase för poängsystem och användarhantering."
+              tags={["Next.js", "TypeScript", "Tailwind", "Supabase"]}
               demoLink={"https://tetris-clone.netlify.app/"}
               githubLink={"https://github.com/Th0rnr/Tetris-Clone"}
               imageElement={

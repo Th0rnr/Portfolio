@@ -69,7 +69,8 @@ const RotatingLetter = ({
 };
 
 export default function Intro({ onComplete }: IntroProps) {
-  const [_, setAllLettersComplete] = useState(false); // Oanvänd variabel med underscore för att undvika lint-fel
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [allLettersComplete, setAllLettersComplete] = useState(false);
   const [showPrompt, setShowPrompt] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false);
   

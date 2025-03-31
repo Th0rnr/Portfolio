@@ -1,8 +1,10 @@
 # Netlify konfigurationsfil
 
 [build]
+  base = "/"
   command = "npm run build"
   publish = ".next"
+  functions = "netlify/functions"
 
 # Environment variabler kan definieras här
 [build.environment]

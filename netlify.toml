@@ -4,23 +4,15 @@
   command = "npm run build"
   publish = ".next"
 
-# Redirects/rewrites för Next.js
-[[redirects]]
-  from = "/*"
-  to = "/_next/static/:splat"
-  status = 200
-
-# Hantera 404-sidan korrekt
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
-
 # Environment variabler kan definieras här
 [build.environment]
   NODE_VERSION = "20.11"
   NPM_VERSION = "10.2"
 
-# Om du använder Netlify Forms
+# För att hantera Netlify Forms
 [build.processing.html]
   pretty_urls = true
+
+# Använd Next.js plugin
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

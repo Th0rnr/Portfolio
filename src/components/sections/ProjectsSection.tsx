@@ -6,12 +6,12 @@ import ProjectCard from '../ui/ProjectCard';
 import Image from 'next/image';
 
 export default function ProjectsSection() {
-  // Gradient bakgrunder för olika projekt
-  const gradients = {
-    blue: "from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800",
-    purple: "from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800",
-    green: "from-green-100 to-green-200 dark:from-green-900 dark:to-green-800",
-  };
+  // Oanvända gradients, behålls för framtida implementationer
+  // const gradients = {
+  //   blue: "from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800",
+  //   purple: "from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800",
+  //   green: "from-green-100 to-green-200 dark:from-green-900 dark:to-green-800",
+  // };
 
   return (
     <section id="projekt" className="py-24 bg-black/[.02] dark:bg-white/[.02]">

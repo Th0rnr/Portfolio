@@ -69,7 +69,7 @@ const RotatingLetter = ({
 };
 
 export default function Intro({ onComplete }: IntroProps) {
-  const [allLettersComplete, setAllLettersComplete] = useState(false);
+  const [_, setAllLettersComplete] = useState(false); // Oanvänd variabel med underscore för att undvika lint-fel
   const [showPrompt, setShowPrompt] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false);
   

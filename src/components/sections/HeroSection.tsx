@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="mb-4 inline-block text-xs tracking-wider border border-black/10 dark:border-white/10 px-3 py-1 rounded-full bg-black/[.02] dark:bg-white/[.02]">
-              FRONT-END UTVECKLARE 
+              SOFTWARE DEVELOPER 
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500 dark:from-white dark:to-gray-400">

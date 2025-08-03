@@ -82,6 +82,27 @@ export default function ProjectsSection() {
               }
             />
           </div>
+
+          <div className="transform transition-all duration-500 hover:scale-105 h-full">
+            <ProjectCard 
+              title="Pomodoro Clock"
+              description="En elegant och funktionell Pomodoro-timer som hjälper användare att hantera tid och produktivitet genom fokuserade arbetssessioner och pauser, byggd med vanilla JavaScript och CSS."
+              tags={["JavaScript", "CSS", "Productivity Tool"]}
+              demoLink={"https://pomodorocl0ck.netlify.app/"}
+              githubLink={"https://github.com/Th0rnr/Pomodoro"}
+              imageElement={
+                <div className="relative h-full w-full">
+                  <Image 
+                    src="/images/projects/Pomodoro.png" 
+                    alt="Pomodoro Clock preview" 
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                  />
+                </div>
+              }
+            />
+          </div>
         </div>
         
         <div className="mt-16 text-center">
